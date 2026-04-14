@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f1ea; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container-convite {
+    position: relative;
+    width: 100%;
+    max-width: 500px; /* Mantém um tamanho confortável no PC e Celular */
+    
+    /* Proporção exata da sua imagem: 1080x3176 */
+    height: auto;
+    aspect-ratio: 1080 / 3176;
+
+    background-image: url('fundo.jpg.png'); 
+    background-size: contain;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+/* Áreas de clique (agora totalmente invisíveis) */
+.area-clicavel {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    /* Removido o background vermelho para ficar invisível */
+}
+
+/* Posição sobre o endereço */
+.mapa {
+    top: 45.2%; 
+    width: 85%;
+    height: 6.5%;
+}
+
+/* Posição sobre o botão de confirmar */
+.forms {
+    top: 52.8%;
+    width: 75%; /* Ajustado para encaixar melhor no botão laranja */
+    height: 4.2%;
+    border-radius: 50px;
+}
